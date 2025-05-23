@@ -1,19 +1,22 @@
 header {
     background: #BBBBBB;
     padding: 20px 0;
-  
+
 }
-.caixa{
+
+.caixa {
     position: relative;
     width: 940px;
     margin: 0 auto;
 
 }
-nav{
+
+nav {
     position: absolute;
-    top:110px;
+    top: 110px;
     right: 0;
 }
+
 nav li {
 
     display: inline;
@@ -21,8 +24,9 @@ nav li {
 
 }
 
-/*Transformar os links em maiuculo, usamos o text - transform*/
+
 nav a {
+    /*Transformar os links em maiuculo, usamos o text - transform*/
     text-transform: uppercase;
     color: black;
     /*fazer com que a fonte fique em negrito*/
@@ -30,4 +34,56 @@ nav a {
     font-size: 22px;
     /*Não quero nenhuma decoração no meu texto, então coloco NONE*/
     text-decoration: none;
+}
+
+/*comportamento quando o mouse esta por cima do elemento- uso o HOVER*/
+nav a:hover{
+color:#c78c19;
+text-decoration: underline;
+
+
+}
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0 ;
+}
+
+.produtos li {
+    display: inline-block;
+    /*deixando os escritos no centro */
+    text-align: center;
+    width: 30%;
+    /*Alinhando os elementos pela linha de cima*/
+    vertical-align:top ;
+   
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*abaixo, configurações que montam uma borda.:*/
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    /*Posso unificar essas três configurações em uma só:*/
+    /*border: 2px solid #000000;*/
+    /*border-radius é usado para declarar quando quero uma borda mais arredondada*/
+    border-radius: 10px;
+
+}
+.produtos h2{
+    /*mudando o tamanho do titulo e colocando em negrito*/
+    font-size: 30px;
+    font-weight: bold;
+}
+.descricao-produto{
+    font-size: 18px;
+}
+
+.valor {
+    /*deixando os valores em negrito*/
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
