@@ -37,18 +37,16 @@ nav a {
 }
 
 /*comportamento quando o mouse esta por cima do elemento- uso o HOVER*/
-nav a:hover{
-color:#c78c19;
-text-decoration: underline;
-
-
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
 }
 
 
 .produtos {
     width: 940px;
     margin: 0 auto;
-    padding: 50px 0 ;
+    padding: 50px 0;
 }
 
 .produtos li {
@@ -57,8 +55,8 @@ text-decoration: underline;
     text-align: center;
     width: 30%;
     /*Alinhando os elementos pela linha de cima*/
-    vertical-align:top ;
-   
+    vertical-align: top;
+
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
@@ -72,12 +70,27 @@ text-decoration: underline;
     border-radius: 10px;
 
 }
-.produtos h2{
+/*comportamento quando o mouse esta por cima do elemento- uso o HOVER*/
+.produtos li:hover{
+    border-color: #c78c19;
+    font-size: 40px;
+}
+/* active é usado para quando o mouse esta pressionado no elemento*/
+.produtos li:active{
+    border-color: #088c19 ;
+ 
+}
+/*quero que o H2 quando o mouse tiver em cima do li dos produtos:*/
+.produtos li:hover h2{
+font-size: 34px;
+}
+.produtos h2 {
     /*mudando o tamanho do titulo e colocando em negrito*/
     font-size: 30px;
     font-weight: bold;
 }
-.descricao-produto{
+
+.descricao-produto {
     font-size: 18px;
 }
 
@@ -86,4 +99,18 @@ text-decoration: underline;
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer {
+
+    text-align: center;
+    background: url("IMG/bg.jpg");
+    padding: 40px 0;
+   
+}
+/*Para colocarmor o C dentro da bolinha, representando o copyright, posso usar o site Unicode*/
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
